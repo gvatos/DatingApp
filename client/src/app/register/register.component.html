@@ -5,10 +5,10 @@
     <div class="form-group">
         <label class="control-label" style="margin-right: 10px;">I am a: </label>
         <label class="radio-inline">
-            <input type="radio" value="male" formControlName='gender'> Male
+            <input type="radio" value='male' formControlName='gender'> Male
         </label>
         <label class="radio-inline">
-            <input type="radio" value="female" formControlName='gender' class="ml-3"> Female
+            <input type="radio" value='female' formControlName='gender' class="ml-3"> Female
         </label>        
     </div>
 
@@ -23,7 +23,8 @@
     <app-text-input [formControl]='registerForm.controls["country"]' 
         [label]='"Country"'></app-text-input>          
     <app-text-input [formControl]='registerForm.controls["password"]' 
-        [label]='"Password"' [type]='"password"'></app-text-input>
+        [label]='"Password"' [type]='"password"'>
+    </app-text-input>
     <app-text-input [formControl]='registerForm.controls["confirmPassword"]' 
         [label]='"Confirm Password"' 
         [type]='"password"'></app-text-input>
